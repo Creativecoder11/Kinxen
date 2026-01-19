@@ -1,14 +1,19 @@
 import InteractiveGradient from "@/components/InteractiveGradient/InteractiveGradient";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <nav>
-        <div className="logo">
-          <p>Kinxen</p>
-        </div>
-        <div className="nav-items">
-          <p>We are </p>
+        <div className="">
+          <Image
+            src="/kinxenwhitelogo.svg"
+            alt="Kinxen Logo"
+            width={220}
+            height={40}
+            className="main-logo"
+          />
         </div>
       </nav>
 
@@ -30,13 +35,49 @@ export default function Home() {
               softness={1.0}
             /> */}
         <div className="hero-logo">
-          <img src="/logo_01.png" alt="Orbit Studio Logo" />
+          {/* <img src="/logo_01.png" alt="Orbit Studio Logo" /> */}
+          <p className="header-line">We’re Building Something New</p>
         </div>
         <div className="hero-footer">
-          <p>Facebook</p>
-          <p>Instagram</p>
-          <p>Tiktok</p>
-          <p>Connect US</p>
+          <p className="footer-link">
+            <Link
+              href="mailto:kinxen.official@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Connect US
+            </Link>
+          </p>
+
+          <p className="footer-link">
+            <Link
+              href="https://www.facebook.com/people/Kinxen/61586421020099/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook
+            </Link>
+          </p>
+
+          <p className="footer-link">
+            <Link
+              href="https://www.instagram.com/kinxenbd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </Link>
+          </p>
+
+          <p className="footer-link">
+            <Link
+              href="https://www.tiktok.com/@kinxenbd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Tiktok
+            </Link>
+          </p>
         </div>
       </section>
     </>
