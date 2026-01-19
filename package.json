@@ -1,6 +1,6 @@
 {
-  "name": "cg-webgl-interactive-background-nextjs",
-  "version": "0.1.0",
+  "name": "Kinxen",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
