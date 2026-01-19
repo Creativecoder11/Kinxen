@@ -1,95 +1,44 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import InteractiveGradient from "@/components/InteractiveGradient/InteractiveGradient";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <>
+      <nav>
+        <div className="logo">
+          <p>Kinxen</p>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="nav-items">
+          <p>We are </p>
+        </div>
+      </nav>
+
+      <section className="hero">
+        <InteractiveGradient />
+        {/* you can customize the gradient by passing below props: */}
+        {/* <InteractiveGradient
+              brushSize={25.0}
+              brushStrength={0.5}
+              distortionAmount={2.5}
+              fluidDecay={0.98}
+              trailLength={0.8}
+              stopDecay={0.85}
+              color1="#b8fff7"
+              color2="#6e3466"
+              color3="#0133ff"
+              color4="#66d1fe"
+              colorIntensity={1.0}
+              softness={1.0}
+            /> */}
+        <div className="hero-logo">
+          <img src="/logo_01.png" alt="Orbit Studio Logo" />
+        </div>
+        <div className="hero-footer">
+          <p>Facebook</p>
+          <p>Instagram</p>
+          <p>Tiktok</p>
+          <p>Connect US</p>
+        </div>
+      </section>
+    </>
   );
 }
