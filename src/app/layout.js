@@ -9,10 +9,24 @@ const inter = Inter({
 
 export const metadata = {
   title: "Kinxen",
-  description: "Kinxen Store - Your One-Stop Shop for Quality Products",
+  description: "A new e-commerce brand coming soon",
   icons: {
     icon: "/whitelogo.svg",
-    
+  },
+  openGraph: {
+    title: "Kinxen",
+    description: "Designed for what’s next. Launching soon.",
+    url: "https://www.kixen.com",
+    siteName: "kinxen",
+    images: [
+      {
+        url: "/voiletlogo.png",
+        width: 1200,
+        height: 630,
+        alt: "kinxen ecommerce store",
+      },
+    ],
+    type: "website",
   },
 };
 
