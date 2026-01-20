@@ -12,6 +12,7 @@ export const metadata = {
   description: "Kinxen Store - Your One-Stop Shop for Quality Products",
   icons: {
     icon: "/whitelogo.svg",
+    
   },
 };
 
