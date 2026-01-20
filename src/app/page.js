@@ -19,8 +19,8 @@ export default function Home() {
 
       <section className="hero">
         <InteractiveGradient />
-        
-        {/* you can customize the gradient by passing below props: */}
+
+        {/* you can customize the gradient by passing below props: we can handle this  */}
         {/* <InteractiveGradient
               brushSize={25.0}
               brushStrength={0.5}
