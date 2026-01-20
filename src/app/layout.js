@@ -10,11 +10,14 @@ const inter = Inter({
 export const metadata = {
   title: "Kinxen",
   description: "Kinxen Store - Your One-Stop Shop for Quality Products",
+  icons: {
+    icon: "/whitelogo.svg",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body className={inter.className}>
         {children}
       </body>
