@@ -9,13 +9,13 @@ const inter = Inter({
 
 export const metadata = {
   title: "Kinxen",
-  description: "A new e-commerce brand coming soon",
+  description: "KinXen is a modern e-commerce brand creating quality-focused products designed for everyday living.",
   icons: {
     icon: "/whitelogo.svg",
   },
   openGraph: {
     title: "Kinxen",
-    description: "Designed for what’s next. Launching soon.",
+    description: "KinXen is a modern e-commerce brand creating quality-focused products designed for everyday living.",
     url: "https://www.kixen.com",
     siteName: "kinxen",
     images: [
