@@ -131,7 +131,9 @@ a.secondary {
     padding: 32px;
     padding-bottom: 80px;
   }
-
+  .demo{
+    align-items: center;
+  }
   .main {
     align-items: center;
   }
